@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relationship Terms & Conditions</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9fafb;
+            padding: 20px;
+        }
+        .container {
+            max-width: 420px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+        .terms {
+            text-align: left;
+            margin: 15px 0;
+            color: #4b5563;
+        }
+        .terms ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .terms li::before {
+            content: "✔️";
+            margin-right: 8px;
+            color: #10b981;
+        }
+        .btn-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+            position: relative;
+        }
+        .accept-btn, .decline-btn {
+            background-color: #10b981;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #ffffff;
+            transition: background 0.3s ease;
+        }
+        .accept-btn:hover {
+            background-color: #059669;
+        }
+        .decline-btn {
+            background-color: #ef4444;
+            position: static;
+            transition: transform 0.3s ease;
+        }
+        .decline-btn:hover {
+            background-color: #dc2626;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function moveButton() {
+            const button = document.querySelector('.decline-btn');
+            const randomX = Math.random() * 200 - 100;
+            const randomY = Math.random() * 200 - 100;
+            button.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Terms & Conditions</h1>
+        <div class="terms">
+            <ul>
+                <li>One Must Not Bully Tejas (He Secretly Likes It)</li>
+                <li>Texting First is Appreciated</li>
+                <li>Reels sent must be aptly responded to by 3 business days</li>
+                <li>Weird Awkward Texts by Tejas must be Excused (He is a silly little guy albeit very cool)</li>
+                <li>No Saying "Ya" (He Hates YA)</li>
+                <li>One May Request a Drawing of any given object by Tejas at any given moment</li>
+            </ul>
+        </div>
+        <div class="btn-container">
+            <button class="accept-btn" onclick="window.location.href='accepted.htm'">Accept</button>
+            <button class="decline-btn" onclick="moveButton()">Decline</button>
+        </div>
+    </div>
+</body>
+</html>

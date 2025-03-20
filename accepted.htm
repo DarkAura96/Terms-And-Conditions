@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Club!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #d1fae5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            background: #6ee7b7;
+            border: 3px solid #34d399;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #047857;
+        }
+        .message {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+        .emoji {
+            font-size: 40px;
+            margin: 10px 0;
+        }
+        .back-btn {
+            background-color: #34d399;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #065f46;
+            transition: background 0.3s ease;
+        }
+        .back-btn:hover {
+            background-color: #10b981;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Club! 🎉</h1>
+        <div class="message">
+            You've officially accepted the terms — no backsies!<br>
+            Enjoy your free trial of Tejas
+        </div>
+        <div class="emoji">😎❤️</div>
+        <button class="back-btn" onclick="window.location.href='index.html'">Go Back</button>
+    </div>
+</body>
+</html>
